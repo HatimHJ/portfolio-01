@@ -1,0 +1,37 @@
+.n-container{
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.n-container .left{
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;  
+}
+.n-container .left .logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.n-container .right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap:1rem
+}
+
+.n-container .right .links ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  
+}
+.n-container .right .links ul li{
+  transition: all .3s;
+}
+.n-container .right .links ul li:hover{
+  color: var(--orange);
+  cursor: pointer;
+}

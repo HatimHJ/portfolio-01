@@ -1,0 +1,64 @@
+.intro{
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  padding-top: 5rem;
+}
+
+
+/* ================================ */
+/* Left Side */
+/* =============================== */
+.intro .i-left .i-name > span{
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.intro .i-left .i-name > span:last-of-type{
+  color: var(--orange);
+  font-size: 3rem;
+  line-height: 1.5;  
+}
+
+.intro .i-left .i-name p{
+  max-width: 500px;
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--gray);
+}
+.intro .i-left  button{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.intro .i-left  .i-icons > img{
+  transform: scale(.75);
+  cursor: pointer;
+}
+
+/* ================================ */
+/* Right Side */
+/* =============================== */
+
+.i-right {
+  position: relative;
+  flex: 1;
+}
+
+.i-right > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.i-right img[alt='vector1'] {
+  transform: rotate(220deg) scale(0.5);
+  top: -10%;
+}
+.i-right img[alt='vector2'] {
+  transform: scale(.5);
+  top: -10%;
+}
+.i-right img[alt='boy'] {
+  left: 40%;
+}
+
+
