@@ -1,0 +1,17 @@
+.services .left span{
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.services .left span:nth-child(2){
+  color: var(--orange);
+  font-size: 2rem;
+  line-height: 1.5; 
+}
+.services .left span:last-of-type{
+  max-width: 500px;
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--gray);
+  margin: 1em auto;
+}

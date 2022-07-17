@@ -1,0 +1,15 @@
+.float{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 1em;
+  flex-direction: row;
+  box-shadow: inset rgb(17 17 26 / 10%) 6px -10px 10px, rgb(17 17 26 / 5%) 0px 8px 32px;
+  height: 50px;
+  gap: 1em;
+}
+
+.float span{
+  display: block;
+  font-weight: bold;
+}

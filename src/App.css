@@ -1,3 +1,6 @@
+/* ================================ */
+/* Reseting */
+/* =============================== */
 body{
   margin: 0;
   font-size: 20px;
@@ -36,13 +39,32 @@ button{
     color: var(--black);    
 }
 
+/* ================================ */
+/* Layout */
+/* =============================== */
+.container{
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  padding-top: 5rem;
+}
+
+
+/* ================================ */
+/* Helpers */
+/* =============================== */
+/* =============Button=========== */
 .btn {
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  /* box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42); */
+  box-shadow: 0px 10px 10px 0px rgba(251, 161, 40, 0.42);
   border-radius: 34px;
   color: white;
   font-size: 16px;
   transition: all .5s;
+}
+.btn-big{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 .btn:hover {
   background: white;
@@ -50,3 +72,13 @@ button{
   border: 1px solid var(--orange);
   color: var(--orange);
 }
+/* =============Effect=========== */
+.blur {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: -6;
+}
+
