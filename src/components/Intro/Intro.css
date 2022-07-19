@@ -1,6 +1,7 @@
 /* ================================ */
 /* Left Side */
 /* =============================== */
+
 .intro .i-left .i-name > span{
   display: block;
   font-size: 2rem;
@@ -28,33 +29,48 @@
 /* Right Side */
 /* =============================== */
 
-.i-right {
-  position: relative;
-  flex: 1;  
-}
+
 .i-right > * {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: static;
 }
 
 /* ================================ */
 /* The Boy And The Vectors */
 /* =============================== */
-.i-right img[alt='vector1'] {
-  transform: rotate(220deg) scale(0.5);
-  top: -10%;
+.i-right img{
+  height: 0;
+  width: 0;
 }
-.i-right img[alt='vector2'] {
-  transform: scale(.5);
-  top: -10%;
-}
-.i-right img[alt='boy'] {
-  left: 40%;
-  transform: scale(1.2);
-}
-.i-right img[alt='glassesimoji'] {
-  transform: scale(.5);
+@media (min-width:1140px){
+  .i-right {
+    position: relative;
+    flex: 1;  
+  }
+  .i-right > * {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .i-right img{
+    height: auto;
+    width: auto;
+  }
+  .i-right img[alt='vector1'] {
+    transform: rotate(220deg) scale(0.5);
+    top: -10%;
+  }
+  .i-right img[alt='vector2'] {
+    transform: scale(.5);
+    top: -10%;
+  }
+  .i-right img[alt='boy'] {
+    left: 40%;
+    transform: scale(1.2);
+  }
+  .i-right img[alt='glassesimoji'] {
+    transform: scale(.5);
+  }
 }
 
 /* ===================================
@@ -92,15 +108,3 @@
   Blur Effect
 =====================================*/
 
-
-
-.blur-yellow{
-  background: radial-gradient(circle, rgba(254,233,170,1) 0%, rgba(221,248,254,1) 150%);  
-  left: auto;
-  right: 0;
-}
-.blur-blue{
-  background: radial-gradient(circle, rgba(172,185,221,1) 4%, rgba(221,248,254,1) 100%);
-  top: auto;
-  bottom: 0;
-}

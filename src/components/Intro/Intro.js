@@ -6,6 +6,7 @@ import facebook from "../../img/fb.png";
 import instagram from "../../img/in.png";
 import vector1 from "../../img/Vector1.png";
 import vector2 from "../../img/Vector2.png";
+import blob1 from "../../img/blob.svg";
 import boy from "../../img/boy.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -32,7 +33,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="i-right">
-        <img src={vector1} alt="vector1" />
+        <img src={blob1} alt="vector1" />
         <img src={vector2} alt="vector2" />
         <img src={boy} alt="boy" />
         <img src={glassesimoji} alt="glassesimoji" />

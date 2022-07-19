@@ -1,0 +1,51 @@
+.experience{
+  justify-content: space-around;
+  align-items: center;
+}
+
+.achievement{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+
+.experience .orange-text{
+  font-size: 1.3em;
+}
+
+.circle{
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.circle::before{
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(180deg,#f1c40f 10%, #e74c3c 100%);
+  border-radius: 100%;
+  z-index: -10;
+  background-size: 300% 300%;
+  background-position: 100% 0%;
+  animation: xxx 4s alternate infinite;
+  box-shadow: 1px 4px 48px 0px rgba(241, 196, 15, .35);
+
+}
+
+@keyframes xxx {
+  50% {
+    background-position: 0% 100%;
+    transform: scale(1.02);
+  }
+}

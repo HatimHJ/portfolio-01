@@ -1,0 +1,60 @@
+.works .left{
+  display: flex;
+  flex-direction: column;
+  row-gap: .8em;
+  align-items: flex-start;
+}
+
+.right{
+  position: relative;
+}
+
+.main-circle{
+  position: relative;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow:  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #fff;
+  
+}
+
+.sec-circle img{
+  width: 100%;
+  /* object-fit: contain; */
+  transform: scale(.6);
+}
+.sec-circle img[alt="shopify"]{
+  transform: translate(0px, -10px) scale(0.6);
+}
+.sec-circle{
+  position: absolute;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  box-shadow:  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 50%;
+}
+
+.sec-circle:nth-child(1){
+  top: 0%;
+  left: 0%;
+}
+.sec-circle:nth-child(2){
+  top: 0%;
+  right: 0%;
+}
+.sec-circle:nth-child(3){
+  bottom: 0%;
+  left: 0%;
+}
+.sec-circle:nth-child(4){
+  bottom: 0;
+  right: 0;
+}
+.sec-circle:nth-child(5){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

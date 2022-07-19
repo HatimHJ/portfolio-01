@@ -1,3 +1,8 @@
+.services{
+  position: relative;
+}
+
+
 .services .left span{
   display: block;
   font-size: 2rem;
@@ -14,4 +19,66 @@
   font-weight: 300;
   color: var(--gray);
   margin: 1em auto;
+}
+
+/*
+=================================
+Right
+=================================
+*/
+
+.card p{
+  max-width: 250px;
+}
+.card img{
+  max-width: 25%;
+}
+
+.cards{
+  position: relative;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-width: auto;
+}
+
+.card{
+  position: static;
+  border: 5px solid var(--orange);
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em 0;
+  background-color: rgba(255, 255, 255, .25);
+  box-shadow: 2px 1px 48px 1px rgba(252,166,31,0.28);
+-webkit-box-shadow: 2px 1px 48px 1px rgba(252,166,31,0.28);
+-moz-box-shadow: 2px 1px 48px 1px rgba(252,166,31,0.28);
+}
+
+
+@media (min-width:1140px) {
+  .cards{
+    position: relative;
+    min-width: 50vw;
+  }
+  
+  .card{
+    position: absolute;
+    border: 5px solid var(--orange);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .glassesimoji{
+  top: 30%;
+  left: -20%;
+  }
+  .humble{
+    bottom: 0%;
+    left: 30%;
+  }
+  .heartimoji{
+    top: -15%;
+    right: 15%;
+  }
 }
