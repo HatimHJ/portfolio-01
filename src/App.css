@@ -122,3 +122,16 @@ button{
   font-size: 2rem;
   font-weight: 700;
 }
+
+
+
+.swiper{
+  overflow: visible !important;
+  margin:  1em !important;
+}
+/*
+.swiper-slide{
+  width: 22rem !important;
+  border: 3px solid var(--orange);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} */

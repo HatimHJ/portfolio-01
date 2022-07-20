@@ -1,0 +1,25 @@
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+
+
+.portfolio-slider{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.portfolio .swiper-slide{
+  width: 22rem !important;
+  border: 3px solid var(--orange);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.portfolio img{
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}

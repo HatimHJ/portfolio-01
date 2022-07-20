@@ -1,0 +1,36 @@
+.contact.container{
+  justify-content: space-evenly;
+}
+.contact .left{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+/* margin-top: 1.5em; */
+}
+
+.contact .right form{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  align-items: center;
+  padding: 2em 0;
+  max-width: 250px;
+  margin: auto;
+}
+.contact .right input,
+.contact .right textarea{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.contact .right textarea{
+  resize: none;
+}
+
+.submit-btn{
+  border: none !important;
+  padding: .5em;
+}
